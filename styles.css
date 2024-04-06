@@ -1,0 +1,204 @@
+:root{
+    --nav-height:   45px;	
+	--background-color: #FAF9F6; 
+    --max-content-width: 800px; 
+	
+	--divider-color: rgba(0, 0, 0, .12); 
+}
+
+
+html {
+    scroll-padding-top: var(--nav-height);
+    font-family: sans-serif; 
+
+	background-color: var(--background-color);
+}
+
+ul, ol, p {
+	font-size: 14px; 
+	line-height: 22px; 
+}
+
+
+body {
+	margin: 0px; 
+	height: 100vh; 
+	display: flex; 
+	flex-direction:column; 
+}
+
+.navbar {
+    line-height:        var(--nav-height);
+    max-width:          var(--max-content-width);
+
+    position:           fixed; 
+    width:              100vw; 
+    top:                0px; 
+    left:               50%; 
+    transform:          translate(-50%);
+    border-bottom:      inset;
+    background-color:   var(--background-color); 
+}
+
+/* 
+ * Used to style anchors in nav 
+ */ 
+.navbar a {
+	padding: 12px 10px;
+    text-decoration-line: underline; 
+    text-decoration-thickness: 2px; 
+    text-decoration-style: dotted; 
+	color: black; 
+}
+
+.navbar a.active {
+    text-decoration-style: solid; 
+}
+
+header.navheader {
+	margin-bottom: var(--nav-height);  
+}
+
+/*
+ * Used to keep content around the center of the screen while preserving a max size
+ */
+section.centeredcontent {
+	padding: 10px 40px 10px 40px; 
+
+	margin-left: auto;
+	margin-right: auto; 
+	box-sizing: border-box; 
+}
+
+section.capcontentwidth {
+	max-width: var(--max-content-width);
+	width: 100%;
+}
+
+h1 {
+	
+	text-align: center;
+	font-size: 30px; 
+	font-weight: 600; 
+}
+
+h2 {
+	font-size: 20px; 
+	font-weight: 600; 
+}
+
+h3 {
+	font-weight: 60; 
+}
+
+h4 {
+	font-weight: 80;
+	border-bottom: 1px solid var(--divider-color); 
+}
+
+
+/* 
+ * Used to move div to the right side of nav bar 
+ */
+.navright {
+	display: inline; 
+	right: 0px;
+	position: absolute; 
+}
+
+
+/*
+ * Used to style footer 
+ */
+footer {
+	margin-top:auto;
+	width: 100%;
+	font-size: 14px; 
+	color: black;
+	text-align: center;
+	
+	border-top: 1px solid var(--divider-color); 
+}
+
+
+hr {
+	border: none; 
+	height: 0px;
+	border-bottom: 1px solid var(--divider-color);
+	
+	width: 100%; 
+	max-width: var(--max-content-width); 
+	
+	margin-top: 0px; 
+	margin-bottom: 0px; 
+}
+
+.reasons-grid {
+	display: grid; 
+	
+	grid-template-rows: 20px auto; 
+	
+	grid-gap: 2.5rem;
+	justify-content: center; 
+	padding-bottom: 2.5rem !important;
+}
+
+
+
+
+.abouthero {
+	flex: 0 0 200px; 
+	text-align: center; 
+	
+	/*
+	 *Centers text
+	 */
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	
+	/*
+	 * Fade bg?
+	 */
+	flex-direction: column; 
+	
+	padding: 10px 40px 10px 40px; 
+}
+
+.abouthero h1 {
+	margin: 0px; 
+}
+
+.abouthero p {
+	max-width: 800px;
+}
+
+
+
+
+.bg_clip_text {
+    background-clip: text !important;
+    text-fill-color: transparent;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.shadow_text {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pride_background {
+    width: 20vw;
+    aspect-ratio: 2 / 1;
+    margin: 20px; 
+}
+
+.footer_flags {
+    width:      100vw;
+    display:    flex;
+    max-width:  var(--max-content-width); 
+    margin:     auto; 
+}

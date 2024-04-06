@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>wpi.gay</title>
+		<link href="./styles.css" rel="stylesheet" type="text/css">
+        <link href="./gay.css" rel="stylesheet" type="text/css">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="wpi.gay">
+		<meta name="description" content="wpi.gay is an unofficial WPI community run by students and alumni---primarily serving communication through email">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var opts = ["lgbt", "ace", "aro", "agender", "bi", "nb", "trans", "pan", "lesbian"];
+
+                $(".pride_lerp").each(function(){
+                    $(this).addClass(opts[~~(Math.random() * opts.length)] + "_lerp");
+                });
+
+                $(".pride_background").each(function(){
+                    $(this).addClass(opts[~~(Math.random() * opts.length)]);
+                })
+
+            });
+        </script>
+
+	</head>
+
+	<body>
+		<header class="navheader">
+			<nav id="topnav" class="navbar">
+                <a class="active" href="https://wpi.gay"><b>wpi.🏳️‍🌈</b></a>
+				<nav class="navright loginnav">
+					<a href="#updates">updates</a>
+					<a href="#join">join</a>
+					<a href="https://wpi.gay/">login</a>
+				</nav>
+			</nav>
+		</header>
+
+		<header class="abouthero">
+            <h1>Welcome to wpi.<span class="pride_lerp bg_clip_text shadow_text">gay</span></h1>
+			<p>
+            We're an online community created by <a href="https://wpi.edu" rel="noopener noreferrer">WPI</a> students for WPI students, alumni, etc.
+
+            As with the other <a href="https://hub.wpi.edu/Community" rel="noopener noreferrer">student-run communities</a> (e.g., the <a href="https://discord.com/invite/wpi" rel="noopener noreferrer">WPI Discord server</a>) despite not being officially sponsored or endorsed by WPI, we strive to provide a space where anyone affiliated with WPI is welcome to join and connect—we just do so through email (i.e., for anyone looking to step back from social media). 
+			</p>
+		</header>
+			
+		<hr>
+
+		<section class="centeredcontent capcontentwidth" id="updates">
+			<main>
+				<article>
+					<h2>Updates</h2>
+					<p>
+						</p><ul>
+							<li><b>2024-04-06</b> - wpi.gay launches!</li>
+						</ul>
+					<p></p>
+				</article>
+			</main>
+		</section>
+
+		<hr>
+		
+		<section class="centeredcontent capcontentwidth" id="join">
+			<main>
+				<article>
+					<h2>Have questions or want to join wpi.gay?</h2>
+					<p>
+                        This site is still <i>very</i> much under construction, so we don't have an official FAQ page yet. As such, if you have any questions, please email us at ops -at- wpi -dot- gay. Similarly, if you would like an account please email us your SSH public key (ideally from your WPI account so we can verify that you are affiliated with the school). 
+					</p>
+				</article> 
+			</main>
+		</section>
+	
+		<footer>
+            <div class="footer_flags">
+            <div class="pride_background"></div>
+            <div class="pride_background"></div>
+            <div class="pride_background"></div>
+            <div class="pride_background"></div>
+            <div class="pride_background"></div>
+            </div>
+		</footer>
+    </body>
+</html>
